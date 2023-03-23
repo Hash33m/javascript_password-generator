@@ -3,8 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 var passwordDetails = writePassword();
 
-function generatePassword(){
-console.log("Great job! You clicked the button!");
+function generatePassword() {
+  console.log("Great job! You clicked the button!");
 
   // 1. Prompt user for password criteria.
   //  - Password lenght 8 < 128.
@@ -22,17 +22,24 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   var passwordRequirements = {
-    allowLowerCase: window.confirm("Can lower case letters be used?"),
-    allowUpperCase: window.confirm("Can upper case letters be used?"),
+    
+    allowLowerCase: window.confirm("Do you need lower case letters be used?"),
+    
+    allowUpperCase: window.confirm("Do you need upper case letters be used?"),
+    
     allowNumbers: window.confirm("Can numbers be used?"),
-    allowSymbols: window.confirm("Can special characters and symbols be used?"),
-    passwordLenght: window.prompt("Please define password lenght."("Must be between 8 and 128 characters"))
+    
+    allowSymbols: window.confirm("Do you need special characters and symbols be used?"),
+    
+    passwordLenght: window.prompt("How many characters does your password need to contain."("Must be between 8 and 128 characters"))
+    
     console.log("Written as part of writePassword logic");
+    
     console.log(passwordRequirements);
     return;
 
   }
-  
+
 
 }
 
