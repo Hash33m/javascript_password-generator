@@ -19,6 +19,11 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
+  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+  var UpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var Numbers = "0123456789";
+  var specialChar = "!@#$%^&*()";
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   var passwordRequirements = {
