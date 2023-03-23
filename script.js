@@ -57,6 +57,7 @@ specialChar= "!@#$%&*()"
 
 Generate password 
 Use logic to make sure requirements are met and if not they should reloop
+*/
 
 
 
